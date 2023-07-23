@@ -1,0 +1,87 @@
+:root{
+    --principal: #013b23;
+    --second: #ffffff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--second);
+    opacity: 50%; /* Firefox */
+    font-size: 0.9vw;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--second);
+    opacity: 50%;
+    font-size: 0.9vw;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--second);
+    opacity: 50%;
+    font-size: vw;
+  }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.contactoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--principal);
+    color: var(--second);
+}
+
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.inputForm{
+    border: none;
+    color: var(--second) !important;
+    background-color: var(--principal);
+    min-height: 5vh;
+    font-size: 2vh;
+}
+
+.labelForm{
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+}
+
+.hrForm{
+    background-color: var(--second);
+    width: 100%;
+    height: 0.2vh;
+}
+
+.mensajeForm{
+    min-height: 5vh !important;
+}
+
+h3{
+    font-size: 2vw;
+    margin: 1em;
+}
+
+.submitForm{
+    height: 4vh;
+    margin-top: 0.5vh;
+    margin-bottom: 6vh;
+    color: var(--principal);
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.captchaContainer{
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

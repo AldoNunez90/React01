@@ -1,0 +1,48 @@
+:root{
+    --principal: #013b23;
+    --second: #ffffff;
+}
+
+h2{
+    font-size: 4vw;
+    font-weight:400;
+    margin: unset;
+    margin-top: 2vh;
+}
+
+.quienesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--principal);
+    color: var(--second);
+}
+
+.QuienesParrafoContainer{
+    width: 55%;
+}
+.quienesTitulo{
+    margin-top: 4vh;
+}
+.quienes{
+    font-weight: 100;
+    font-size: 1.6vw;
+}
+.quienesFinal{
+    margin-bottom: 10vh;
+}
+span{
+    font-weight: 600;
+}
+
+.imgSeparador{
+    width: 100vw;
+}
+
+.separadorContainer{
+    display: flex;
+}
+
+.breackPoint{
+    width: 1%;
+}

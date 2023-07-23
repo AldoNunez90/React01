@@ -1,0 +1,88 @@
+.ReactModal__Overlay--after-open{
+    background-color: #113b0198 !important;
+    z-index: 1000;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    transition: 3000;
+}
+
+.ReactModal__Content--after-open{
+    width: 50%;
+    height: 70%;
+    position: initial !important;
+    display: flex;
+    flex-direction: column;
+    border: #013b23 solid 5px !important;
+}
+
+.ReactModal__Body--open{
+    overflow: hidden!important;
+}
+.btnVolver{
+    position: unset !important;
+    align-self: end;
+    background-color: #013b23;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+}
+
+.imgTratamiento{
+    width: -webkit-fill-available;
+}
+
+.modalContainer{
+    color: #013b23;
+}
+
+.parrafoModal{
+    font-size: 1vw;
+}
+
+.tituloModal{
+    font-size: 1.5vw;
+}
+
+/* Spinner */
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #013b23;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    display: none;
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+  .spinnerContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff33;
+    display: none;
+  }
+
+  #modalForm{
+    width: auto;
+    height: auto;
+    border: #013b23 solid 3px !important;
+    color: #013b23;
+    font-size: large;
+  }

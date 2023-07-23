@@ -1,0 +1,91 @@
+
+
+.terapiasContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #013b23;
+}
+
+.terapiasIntro{
+    width: 95%;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+.terapiasTop{
+    margin-top: 0;
+
+}
+.carouselContainer{
+    width: 90vw;
+    margin: auto;
+}
+
+.slick-prev{
+    background-color: #013b23ae !important;
+    left: -45px !important;
+    height: 100% !important;
+    width: 30px !important;
+}
+
+.slick-next{
+    background-color: #013b23ae !important;
+    right: -45px !important;
+    height: 100% !important;
+    width: 30px !important;
+}
+
+.imgTerapias{
+    width: 100%;
+    pointer-events: none;
+}
+
+
+
+/* .slick-slide{
+    border: #013b23 solid 2px !important;
+    width: 296px !important;
+    margin: 0 12px !important;
+} */
+
+.cardTerapia{
+    height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.cardTer{
+    width: 90% !important;
+    padding: 3%;
+    border: solid;
+    margin: 2px;
+    min-height: 65vh;
+    display: flex !important;
+    flex-direction: column;
+    
+}
+
+.carouselContainerNos{
+    width: 100vw !important;
+    background-color: #013b23;
+}
+.parrafoTerapias{
+    font-size: 1.2vw;
+}
+
+.tituloterapias{
+    font-size: 1.5vw;
+    /* margin: 0; */
+}
+
+/* button{
+    font-size: 1.5vw !important;
+} */
+
+.btnModal{
+    background-color:#013b23;
+    color: #ffffff;     
+    border: none;
+    padding: 10px; 
+    }

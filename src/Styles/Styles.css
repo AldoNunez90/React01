@@ -1,0 +1,74 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'SF Pro', sans-serif;
+}
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../../public/fonts/SFPro-Regular.ttf');
+}
+:root{
+    --principal: #013b23;
+    --second: #ffffff;
+}
+
+.headerHero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.logoPrincipal{
+    width: 50%;
+}
+
+.listNav{
+    display: flex;
+    width: 29%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky{
+    display: flex;
+    width: 29%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-color: var(--second);
+    border-bottom: #013b23 solid 3px;
+    z-index: 1000;
+    padding: 3px;
+    transition: 0.3s;
+    padding: 15px 100vw;
+}
+
+
+.listNavElement{
+    font-size: 1.5vw;
+    color: var(--principal);
+}
+
+hr{
+    width: 50%;
+    background-color: var(--principal);
+    height: 3px;
+    border: none;
+}
+
+.bienvenidos{
+    font-size: 5vw;
+    color: var(--principal);
+    margin: 0.5em;
+}
+.bienvenidosContainer{
+    margin-block-end: 0.5em;
+}

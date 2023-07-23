@@ -1,0 +1,25 @@
+.logoFooterHero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoFooterContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.logoFooter{
+    width: 25%;
+}
+
+
+.datosFooter{
+    font-size: 2vh;
+    text-align: center;
+}
+
+.logoFirma{
+    width: 12vw;
+}

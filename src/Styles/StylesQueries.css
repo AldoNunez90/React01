@@ -1,0 +1,207 @@
+@media only screen and (min-width: 2200px) {
+  .cardTer {
+    min-height: 32vw !important;
+  }
+}
+
+@media only screen and (min-width: 1550px) and (max-width: 1800px) {
+  .headerContainer {
+    margin-top: 2vh;
+  }
+  .quienesTitulo {
+    margin-top: 2vh;
+  }
+  .quienesFinal {
+    margin-bottom: 5vh !important;
+  }
+  .cardTer {
+    min-height: 36vw !important;
+  }
+  .mensajeForm {
+    min-height: 2vh !important;
+  }
+  .inputForm {
+    min-height: unset !important;
+    font-size: 1.5vh !important;
+  }
+  .submitForm {
+    height: 3vh !important;
+    font-size: 1.2vw !important;
+    margin-bottom: 2vh !important;
+  }
+  .logoFooter {
+    width: 50%;
+  }
+  .datosFooter {
+    font-size: 1.7vh !important;
+  }
+  .logoFirma {
+    width: 30vw;
+  }
+  .ReactModal__Content--after-open {
+    height: unset !important;
+  }
+  .terapiasIntro {
+    font-size: 1.1vw;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1060px) {
+  .quienesFinal {
+    margin-bottom: 5vh !important;
+  }
+  .ReactModal__Content,
+  .ReactModal__Content--after-open {
+    max-height: 80% !important;
+  }
+  .terapiasIntro {
+    font-size: 1.1vw !important;
+  }
+  .cardTer {
+    min-height: 36vw;
+  }
+  .logoFirma {
+    width: 15vw !important;
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 820px) {
+  .QuienesParrafoContainer {
+    width: 55% !important;
+  }
+  .cardTer {
+    min-height: 38vw !important;
+  }
+  .logoFirma {
+    width: 14vw !important;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 700px) {
+  .quienesFinal {
+    margin-bottom: 3vh !important;
+  }
+  .quienesTitulo{
+    margin-top: 2vh !important;
+  }
+  .QuienesParrafoContainer {
+    width: 70% !important;
+  }
+  .quienes{
+    font-size: 2vw !important;
+  }
+  .cardTer {
+    min-height: 54vw !important;
+  }
+  .logoFirma {
+    width: 30vw !important;
+  }
+  .parrafoModal {
+    font-size: 2vw;
+}
+.parrafoTerapias{
+    font-size: 1.6vw !important;
+}
+.formContacto{
+    width: 70% !important;
+}
+.labelForm{
+    font-size: 2vw !important;
+}
+.logoFooter {
+    width: 55% !important;
+}
+::placeholder {
+    font-size: 1.8vw !important;
+  }
+  h3{
+    font-size: 2.5vw !important
+  }
+  .terapiasIntro{
+    font-size: 1.7vw !important;
+  }
+  .parrafoModal {
+    font-size: 2vw !important;
+}
+.modal3{
+  height: unset !important;
+}
+.ReactModal__Content--after-open{
+  height: 60%;
+}
+ 
+}
+
+@media only screen and (max-width: 680px) and (min-width: 325px){
+    .logoPrincipal {
+        width: 85%;
+    }
+    .listNav{
+        display: none;
+    }
+    .bienvenidos{
+      font-size: 6vw !important;
+    }
+    .slick-next, .slick-prev{
+        display: none !important;
+    }
+    .quienesTitulo {
+        margin-top: 2vh !important;
+    }
+    .QuienesParrafoContainer {
+        width: 95% !important;
+    }
+    .quienes {
+        font-size: 3.5vw !important;
+    }
+    h2{
+      font-size: 5vw !important;
+    }
+    h3{
+        font-size: 5vw !important;
+    }
+    .brQuienes{
+      display: none;
+    }
+    .quienesFinal {
+        margin-bottom: 3vh !important;
+    }
+    .terapiasIntro {
+        font-size: 3.5vw !important;
+        margin-top: 8vw
+    }
+    .parrafoTerapias {
+        font-size: 3.5vw !important;
+    }
+    .cardTer{
+        min-height: 85vw !important ;
+        border: solid 3px !important;
+    }
+    .labelForm{
+      font-size: 3.5vw !important;
+    }
+    ::placeholder{
+      font-size: 3.3vw !important;
+    }
+    .formContacto{
+      width: 80% !important;
+    }
+    .logoFooter {
+      width: 80% !important;
+    }
+    .datosFooter{
+      font-size: 3.5vw !important;
+    }
+    .logoFirma{
+      width: 40vw !important;
+    }
+    .ReactModal__Content--after-open{
+      width: 80% !important;
+    }
+    .parrafoModal{
+      font-size: 3.5vw !important;
+    }
+    p{
+      font-weight: 350 !important;
+    }
+}

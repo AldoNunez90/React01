@@ -16,10 +16,11 @@ h2{
     align-items: center;
     background-color: var(--principal);
     color: var(--second);
+    width: 100vw;
 }
 
 .QuienesParrafoContainer{
-    width: 55%;
+    width: 50%;
 }
 .quienesTitulo{
     margin-top: 4vh;

@@ -7,8 +7,15 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Contacto = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [captchaValido, setCaptchaValido] = useState(null)
-  
+  const [captchaValido, setCaptchaValido] = useState(null);
+  const [tel, setTel] = useState("");
+  const [telValido, setTelValido] = useState(true);
+  const [mail, setMail] = useState("");
+  const [mailValido, setMailValido] = useState(true);
+
+  const validarTel = (e) => {
+    setTel(e.target.value);
+  };
   const captcha = useRef(null);
   const form = useRef();
 
@@ -32,28 +39,48 @@ const Contacto = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if(captcha.current.getValue()){
-      setCaptchaValido(true)
-      openSpinner();
-      emailjs
-      .sendForm("service_huh3m24","template_ms40cei",form.current,"KVZsqULY1UZEMlYsK")
-        .then(
-          () => {
-            closeSpinner();
-            openModal();
-          },
-          (error) => {
-            console.log(error.text);
-          }
-          );
-        } else{
-          setCaptchaValido(false)
+    if (tel.length !== 10) {
+      setTel("");
+      setTelValido(false);
+    } else {
+      setTelValido(true);
+      if (
+        /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(
+          mail.target.value
+        )
+      ) {
+        setMailValido(true);
+        if (captcha.current.getValue()) {
+          setCaptchaValido(true);
+          openSpinner();
+          emailjs
+            .sendForm(
+              "service_huh3m24",
+              "template_ms40cei",
+              form.current,
+              "KVZsqULY1UZEMlYsK"
+            )
+            .then(
+              () => {
+                closeSpinner();
+                openModal();
+              },
+              (error) => {
+                console.log(error.text);
+              }
+            );
+        } else {
+          setCaptchaValido(false);
         }
+      } else {
+        setMailValido(false);
+      }
+    }
   };
 
   function onChange() {
     if (captcha.current.getValue()) {
-      setCaptchaValido(true)
+      setCaptchaValido(true);
     }
   }
 
@@ -100,11 +127,15 @@ const Contacto = () => {
           id="user_phone"
           placeholder="Ingresa tu teléfono"
           className="inputForm"
-          minLength={4}
-          maxLength={5}
           size="10"
+          onChange={validarTel}
           required
         />
+        {telValido === false && (
+          <div className="phoneContainer">
+            <p>Verifique el número de teléfono (si es celular, sin 0 ni 15)</p>
+          </div>
+        )}
         <hr className="hrForm" />
         <label htmlFor="user_email" className="labelForm">
           E-mail*
@@ -115,8 +146,14 @@ const Contacto = () => {
           id="user_email"
           placeholder="Ingresa tu email"
           className="inputForm"
+          onChange={setMail}
           required
         />
+        {mailValido === false && (
+          <div className="mailContainer">
+            <p>Verifique la dirección de correo electrónico</p>
+          </div>
+        )}
         <hr className="hrForm" />
         <label htmlFor="message" className="labelForm mensajeForm">
           Mensaje*
@@ -133,13 +170,17 @@ const Contacto = () => {
         ></textarea>
         <hr className="hrForm" />
         <div className="captchaContainer">
-        {captchaValido === false && <div><p>Por favor verifique el captcha</p></div>}
-        <ReCAPTCHA
-          ref={captcha}
-          sitekey="6Lef80onAAAAANQ_6g4F7m4rSLlhj_VjnwFG9H4b"
-          onChange={onChange}
+          {captchaValido === false && (
+            <div>
+              <p>Por favor verifique el captcha</p>
+            </div>
+          )}
+          <ReCAPTCHA
+            ref={captcha}
+            sitekey="6Lef80onAAAAANQ_6g4F7m4rSLlhj_VjnwFG9H4b"
+            onChange={onChange}
           />
-          </div>
+        </div>
         <input type="submit" value="Enviar" className="submitForm" />
       </form>
     </div>

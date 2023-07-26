@@ -79,7 +79,7 @@ h3{
     font-size: 2vh;
 }
 
-.captchaContainer{
+.captchaContainer, .phoneContainer, .mailContainer{
     color: red;
     display: flex;
     flex-direction: column;

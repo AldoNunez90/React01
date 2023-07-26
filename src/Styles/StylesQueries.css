@@ -46,7 +46,7 @@
   }
 }
 
-@media only screen and (max-width: 1500px) and (min-width: 1060px) {
+@media only screen and (max-width: 1500px) and (min-width: 1360px) {
   .quienesFinal {
     margin-bottom: 5vh !important;
   }
@@ -58,7 +58,26 @@
     font-size: 1.1vw !important;
   }
   .cardTer {
-    min-height: 36vw;
+    min-height: 38vw !important;
+  }
+  .logoFirma {
+    width: 15vw !important;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1060px) {
+  .quienesFinal {
+    margin-bottom: 5vh !important;
+  }
+  .ReactModal__Content,
+  .ReactModal__Content--after-open {
+    max-height: 80% !important;
+  }
+  .terapiasIntro {
+    font-size: 1.1vw !important;
+  }
+  .cardTer {
+    min-height: 40vw !important;
   }
   .logoFirma {
     width: 15vw !important;
@@ -174,7 +193,7 @@
         font-size: 3.5vw !important;
     }
     .cardTer{
-        min-height: 85vw !important ;
+        min-height: 108vw !important ;
         border: solid 3px !important;
     }
     .labelForm{

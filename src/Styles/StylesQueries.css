@@ -179,7 +179,7 @@
     h3{
         font-size: 5vw !important;
     }
-    .brQuienes{
+    .brQuienes, .brTerapias{
       display: none;
     }
     .quienesFinal {
